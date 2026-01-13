@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Free QR Code Generator</title>
+
+    <meta name="description"
+          content="Generate QR codes instantly for any website link. Free, fast, secure QR code generator with download option.">
+
+    <meta name="keywords"
+          content="QR code generator, URL to QR, free QR generator, QR code website">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="canonical" href="/" />
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <main class="container">
+        <h1>QR Code Generator</h1>
+        <p>Paste any website link and instantly convert it into a scannable QR code.</p>
+
+        <form id="qr-form">
+            <input
+                id="url-input"
+                type="url"
+                placeholder="https://example.com"
+                required
+                aria-label="Website URL"
+            >
+            <button type="submit">Generate QR Code</button>
+        </form>
+
+        <section id="qr-result" class="qr-result" aria-live="polite"></section>
+    </main>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
