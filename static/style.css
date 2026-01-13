@@ -134,9 +134,12 @@ footer {
 .navbar {
     display: flex;
     align-items: center;
+    padding: 20px 0;          /* gives logo breathing space */
 }
 
 .logo {
-    height: 42px;
+    height: 64px;             /* bigger, clear, professional */
     width: auto;
+    object-fit: contain;
 }
+
