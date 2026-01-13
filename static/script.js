@@ -25,10 +25,12 @@ form.addEventListener("submit", async (e) => {
             return;
         }
 
+        const imgSrc = `data:image/png;base64,${data.qr_base64}`;
+
         result.innerHTML = `
-            <img src="${data.qr_url}" alt="Generated QR Code">
+            <img src="${imgSrc}" alt="Generated QR Code">
             <br>
-            <a href="${data.qr_url}" download class="download-btn">
+            <a href="${imgSrc}" download="my-qr.png" class="download-btn">
                 Download QR
             </a>
         `;

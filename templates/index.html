@@ -3,39 +3,86 @@
 <head>
     <meta charset="UTF-8">
 
-    <title>Free QR Code Generator</title>
+    <title>Link to QR Code Converter | Free Online QR Generator</title>
+    <link rel="icon" type="image/png" href="/static/logo.png">
 
     <meta name="description"
-          content="Generate QR codes instantly for any website link. Free, fast, secure QR code generator with download option.">
+          content="Convert any link or website URL into a QR code instantly. Free online link to QR code generator with download option. Fast, secure, and easy to use.">
 
     <meta name="keywords"
-          content="QR code generator, URL to QR, free QR generator, QR code website">
+          content="link to qr code, url to qr code, qr code generator, website to qr, free qr code generator, online qr maker">
+
+    <meta name="author" content="My QR">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="canonical" href="/" />
     <link rel="stylesheet" href="/static/style.css">
+
+    <!-- Structured Data for Google SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "My QR",
+      "description": "Free online tool to convert any link or website URL into a QR code instantly.",
+      "applicationCategory": "Utility",
+      "operatingSystem": "All"
+    }
+    </script>
 </head>
 
 <body>
 
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+    <img src="/static/logo.png" alt="My QR Logo" class="logo">
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
     <main class="container">
-        <h1>QR Code Generator</h1>
-        <p>Paste any website link and instantly convert it into a scannable QR code.</p>
+        <h1>Link to QR Code Generator</h1>
+
+        <p>
+            Instantly convert any website link into a scannable QR code.
+            No signup, no limits, 100% free.
+        </p>
 
         <form id="qr-form">
             <input
                 id="url-input"
                 type="url"
-                placeholder="https://example.com"
+                placeholder="Paste your website link here"
                 required
-                aria-label="Website URL"
+                aria-label="Enter website URL to generate QR code"
             >
             <button type="submit">Generate QR Code</button>
         </form>
 
         <section id="qr-result" class="qr-result" aria-live="polite"></section>
     </main>
+
+    <!-- SEO CONTENT (Hidden but indexable) -->
+    <section style="max-width:900px; margin:60px auto; padding:0 20px; font-size:0.9rem; opacity:0.9;">
+        <h2>Free Online Link to QR Code Converter</h2>
+        <p>
+            My QR is a fast and secure online tool that helps you convert any URL,
+            website link, or web page into a QR code instantly. You can scan the QR
+            code directly from your screen or download it for printing and sharing.
+        </p>
+
+        <p>
+            This QR code generator works on all devices and supports links to websites,
+            portfolios, social media pages, documents, and more.
+        </p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer style="text-align:center; padding:20px; font-size:0.85rem; opacity:0.7;">
+        © 2026 My QR · Free Link to QR Code Generator
+    </footer>
 
     <script src="/static/script.js"></script>
 </body>
