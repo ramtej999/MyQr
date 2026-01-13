@@ -2,15 +2,6 @@ const form = document.getElementById("qr-form");
 const input = document.getElementById("url-input");
 const result = document.getElementById("qr-result");
 
-// NEW
-const passwordToggle = document.getElementById("password-toggle");
-const passwordInput = document.getElementById("password-input");
-
-// NEW: toggle visibility
-passwordToggle.addEventListener("change", () => {
-    passwordInput.style.display = passwordToggle.checked ? "block" : "none";
-});
-
 form.addEventListener("submit", async (e) => {
     e.preventDefault();
     result.innerHTML = "";
@@ -18,18 +9,13 @@ form.addEventListener("submit", async (e) => {
     const url = input.value.trim();
     if (!url) return;
 
-    // NEW
-    const password = passwordToggle.checked
-        ? passwordInput.value.trim()
-        : null;
-
     try {
         const response = await fetch("/generate-qr", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify({ url, password })
+            body: JSON.stringify({ url })
         });
 
         const data = await response.json();
