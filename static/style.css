@@ -140,3 +140,7 @@ footer {
     font-size: 0.85rem;
     color: var(--muted);
 }
+/* ---------------- PASSWORD UI ---------------- */
+#password-input {
+    margin-top: 8px;
+}

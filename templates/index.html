@@ -58,8 +58,24 @@
                 required
                 aria-label="Enter website URL to generate QR code"
             >
+
+            <!-- NEW: PASSWORD TOGGLE -->
+            <label style="display:flex; align-items:center; gap:8px; font-size:0.85rem;">
+                <input type="checkbox" id="password-toggle">
+                Protect with password
+            </label>
+
+            <!-- NEW: PASSWORD INPUT -->
+            <input
+                id="password-input"
+                type="password"
+                placeholder="Set password"
+                style="display:none;"
+            >
+
             <button type="submit">Generate QR Code</button>
         </form>
+
 
         <section id="qr-result" class="qr-result" aria-live="polite"></section>
     </main>

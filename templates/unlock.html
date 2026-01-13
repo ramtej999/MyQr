@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unlock QR</title>
+    <style>
+        body {
+            background:#0f172a;
+            color:white;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+            font-family:Segoe UI;
+        }
+        form {
+            background:#1e293b;
+            padding:30px;
+            border-radius:12px;
+            width:300px;
+            text-align:center;
+        }
+        input, button {
+            width:100%;
+            padding:12px;
+            margin-top:12px;
+            border-radius:8px;
+            border:none;
+        }
+        button {
+            background:#38bdf8;
+            font-weight:bold;
+            cursor:pointer;
+        }
+        .error {
+            color:#f87171;
+            margin-top:10px;
+        }
+    </style>
+</head>
+<body>
+<form method="post">
+    <h2>Enter Password</h2>
+    <input type="password" name="password" required>
+    <button type="submit">Unlock</button>
+    {% if error %}<div class="error">{{ error }}</div>{% endif %}
+</form>
+</body>
+</html>
